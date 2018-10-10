@@ -37,10 +37,12 @@
 
 form {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .listo-button {
-  text-align: center;
+  align-self: center;
   background-color: #4b0c2f;
   color: #dfc506;
   border: 0;
@@ -52,6 +54,9 @@ form {
   margin-bottom: 100px;
   box-shadow: 3px 3px 5px 6px #4b0c2f;
   font-family: Cardenio-Modern-Bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @font-face {

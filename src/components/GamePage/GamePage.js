@@ -78,12 +78,13 @@ class GamePage extends Component {
             "{currentPregunta.pregunta}
             <input id="answer" type="text" name="answer" autoComplete="off" />"
           </h1>
-          <input
+          <div
             type="submit validateForm()"
             onClick={this.handleSubmit}
             className="listo-button"
-            defaultValue="LISTO"
-          />
+          >
+            <span>LISTO</span>
+          </div>
         </form>
       </div>
     );
