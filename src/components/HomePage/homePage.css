@@ -4,15 +4,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .logoPantalla {
-  width: 760px;
-  position: absolute;
-  z-index: 1;
+  width: 500px;
+  padding-top: 40px;
 }
 
 .start-button {
@@ -25,12 +24,10 @@
   width: 260px;
   height: 100px;
   font-size: 30px;
-  margin-bottom: 75px;
+  margin-bottom: 55px;
   box-shadow: 3px 3px 5px 6px #4b0c2f;
   font-family: Cardenio-Modern-Bold;
-  z-index: 2;
-  position: relative;
-  margin-top: 698px;
+  margin-top: 64px;
 }
 
 .logosAbajo {
