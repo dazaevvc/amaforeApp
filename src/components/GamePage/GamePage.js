@@ -36,15 +36,12 @@ class GamePage extends Component {
     const random = Math.floor(
       Math.random() * preguntasRespuestasPaginas.length
     );
-    //si ya no hay preguntas cambia de pagina
     if (preguntasRespuestasPaginas.length === 0) {
       if (wins === 5) {
         document.location.href = '/winpage';
       }
     }
     if (currentPregunta.respuesta === text) {
-      //si la respuesta es correcta
-      //1 settear la nueva pregunta
       let preguntaRamdom = preguntasRespuestasPaginas[random];
 
       let laPreguntaEsDiferente = !preguntasUsadas.includes(
@@ -65,7 +62,7 @@ class GamePage extends Component {
   }
 
   render() {
-    const { currentPregunta, preguntasUsadas } = this.state;
+    const { currentPregunta } = this.state;
 
     return (
       <div className="game-page">
