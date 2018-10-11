@@ -38,7 +38,7 @@ class GamePage extends Component {
     );
     if (preguntasRespuestasPaginas.length === 0) {
       if (wins === 5) {
-        document.location.href = '/winpage';
+        window.location.href = '/winpage';
       }
     }
     if (currentPregunta.respuesta === text) {
@@ -57,7 +57,7 @@ class GamePage extends Component {
         document.forms['myForm']['answer'].value = '';
       }
     } else {
-      document.location.href = '/lostpage';
+      window.location.href = '/lostpage';
     }
   }
 
